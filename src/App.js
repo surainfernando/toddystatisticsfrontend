@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import graph from './UIClass/graph.js'
+import graph2 from './UIClass/graph2.js'
+import graph3 from './UIClass/graph3.js'
+import {ReactTable} from 'react-table';
+
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit ggggggguiiiiiiii <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+     
+    <Router>
+    <nav className="navbar">
+    <Link className="navbar-brand" >MEET  YOUR  REPRESENTATIVE</Link>
+    </nav>
+        <div>
+          
+          <Route exact path='/' component={graph} />
+          <Route exact path='/graph2' component={graph2} />
+          <Route exact path='/graph3' component={graph3} />
+          
+
+
+       
+          
+        </div>
+      </Router>
+      </div>
+
+
   );
 }
 
