@@ -113,8 +113,53 @@ getTemp1()
       <div className="col-sm-8 col-sm-offset-2">
             <div className="panel panel-primary">
               <div className="panel-heading">
-      
-          
+      <h1>hello</h1>
+      <h1 id='test1'>hello</h1>
+        
+          <div>
+          <table class="table">
+          <thead>
+               <tr>
+            
+                 <th scope="col">Morning</th>
+                 <th scope="col">Afternoon</th>
+                 
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 
+                 <td>9.30 am</td>
+                 <td>12.45 pm</td>
+                
+               </tr>
+               <tr>
+                 
+                 <td class="booked">9.45 am</td>
+                 <td>1.00 pm</td>
+                
+               </tr>
+               <tr>
+                
+                 <td>10.00 am</td>
+                 <td class="booked">1.15 pm</td>
+               
+               </tr>
+               <tr>
+                
+                 <td>10.15 am</td>
+                 <td>1.30 pm</td>
+               
+               </tr>
+               <tr>
+                
+                 <td>10.30 am</td>
+                 <td>1.45 pm</td>
+               
+               </tr>
+             </tbody>
+          </table>
+          </div>
           </div> 
           </div> 
           </div> 
@@ -122,7 +167,15 @@ getTemp1()
           <div className="panel panel-primary">
             <div className="panel-heading">
 
-         
+            <h1>sector 2</h1>
+            <ReactTable
+            data={mdata}  
+            columns={columns} 
+            showPagination={false} 
+            resolveData={data => data.map(row => row)} 
+            defaultPageSize={Object.keys(mdata).length+3}
+            sortable={false}
+            resizable={false}
 />
             <h1>hdd</h1>
             <h1>kk</h1>
