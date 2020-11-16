@@ -7,3 +7,14 @@ table {
     width: 50%;
   }
   #test1{font-style: italic;}
+
+  #jumbotext{background-color: coral;}
+  .col-sm-4{background-color:white;}
+  #d1{
+    background-color: #e3e3e3;
+}
+#fi{background-color: blue;}
+#fi1{background-color: blue;}
+#r1{
+  margin-top: 10px;
+}
